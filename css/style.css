@@ -1,7 +1,3 @@
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 .landing {
   background-color: black;
   color: white;
@@ -39,6 +35,25 @@ body {
   grid-column: 1;
   grid-row: 4;
   display: flex;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.item__link {
+  color: white;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .projects {
