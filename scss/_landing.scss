@@ -1,6 +1,8 @@
+@use "palette";
+
 .landing {
-  background-color: black;
-  color: white;
+  background-color: palette.$landing-bg;
+  color: palette.$heading;
   font-size: 2em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,11 +23,11 @@
   }
 
   &__circle {
-    background-color: blue;
+    background-color: palette.$circle-fill;
     height: 300px;
     width: 300px;
     z-index: 2;
-    border: 2px solid gold;
+    border: 2px solid palette.$circle-border;
     grid-column: 3 / span 2;
     grid-row: 2 / span 2;
     border-radius: 50%;

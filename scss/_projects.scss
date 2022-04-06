@@ -1,6 +1,8 @@
+@use "palette";
+
 .project {
   display: grid;
-  background-color: rgb(185, 181, 181);
+  background-color: palette.$project-bg;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 

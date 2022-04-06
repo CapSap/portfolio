@@ -1,8 +1,10 @@
+@use "palette";
+
 .list {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-color: palette.$navbar-bg;
   color: white;
   margin: 0;
 }
