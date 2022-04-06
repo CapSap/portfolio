@@ -1,0 +1,13 @@
+.project {
+  display: grid;
+  background-color: rgb(185, 181, 181);
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+
+  &__heading {
+    padding: 20px;
+  }
+
+  &__container {
+  }
+}
