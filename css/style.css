@@ -61,9 +61,12 @@
 .project__heading {
   padding: 20px;
   align-self: center;
+  border: 1px solid black;
 }
-.project__container {
+
+.card {
   padding: 20px;
+  border: 1px solid black;
 }
 
 .norm {
