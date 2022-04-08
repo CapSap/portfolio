@@ -40,42 +40,52 @@
       </p>
     </div>
     <section class="project" id="projects">
-        <h2 class="project__heading">Projects</h2>
-        <div class="project__container">
-          <h3 class="project__title">Norm app</h3>
-          <p class="project__description">
-            This app fetches data from the twitter API to display the recent
-            tweets made about Norm Macdonald, as a tribute to the late comedian.
-            During the process, I encountered a CORS issue for the first time.
-            To solve the issue, I served the React app from an express server;
-            allowing the server to make the API request. Through the building of
-            Norm, I discovered Express, Node, CORS, working with an external
-            API, and page-designing.
-          </p>
-          <img class="project__image" />
+      <h2 class="project__heading">Featured Projects</h2>
+      <div class="card norm">
+        <h3 class="card__title">Norm app</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This app fetches data from the twitter API to display the recent
+          tweets made about Norm Macdonald, as a tribute to the late comedian.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p class="card__text">
+          During the process, I encountered a CORS issue for the first time. To
+          solve the issue, I served the React app from an express server;
+          allowing the server to make the API request. Through the building of
+          this app, I discovered Express, Node, CORS, working with an external
+          API, and page-designing.
+        </p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">Express, Node, React, TwitterAPI</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/norm-tribute"
+            >Link to GitHub Repo</a
+          >
+          <a href="https://immense-depths-37700.herokuapp.com/"
+            >Link to Live Site</a
+          >
         </div>
-        <div class="project__container">
-          <h3 class="project__title">Whose Round</h3>
-          <p class="project__description">
-            This drink tracking app was the result of a casual pub chat, where
-            we discovered that it was difficult to track rounds with mates. The
-            app allows users to enter their name, date, and the quantity of
-            their purchased drink, where users are also able to access their
-            rounds history.
-          </p>
-          <img class="project__image" />
-        </div>
-        <div class="project__container">
-          <h3 class="project__title">Paddy CNC app</h3>
-          <p class="project__description">
-            This application is intended to replace several google sheets that
-            are used to coordinate tasks and feed information to and from
-            multiple users to the online order fulfilment team. I am also taking
-            this opportunity to learn more about the MERN stack to deepen my
-            understanding in order to support an upcoming volunteer project with
-            Code.Sydney starting in January 2021.
-          </p>
-          <img class="project__image" />
+
+        <img class="project__image" />
+      </div>
+
+      <div class="card paddy-cnc">
+        <h3 class="card__title">Paddy CNC app (work in progress)</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This application is intended to replace several google sheets that are
+          used to coordinate tasks and feed information to and from multiple
+          users to the online order fulfilment team.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p>Database design</p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">MERN stack (MongoDB, Express, React, Node)</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/paddy-mern-3/"
+            >Link to GitHub Repo</a
+          >
         </div>
       </div>
     </section>
