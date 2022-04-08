@@ -3,13 +3,24 @@
 .project {
   display: grid;
   background-color: palette.$project-bg;
-  gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 40px;
+  font-size: 1.5em;
 
   &__heading {
     padding: 20px;
+    align-self: center;
   }
-
   &__container {
+    padding: 20px;
   }
+}
+
+.norm {
+  grid-column: 4 / span 2;
+}
+
+.paddy-cnc {
+  grid-column: 6 / span 2;
 }
