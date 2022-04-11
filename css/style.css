@@ -57,12 +57,19 @@
   display: flex;
   justify-content: space-around;
   background-color: rgb(39, 39, 39);
-  color: white;
+  color: rgb(244, 244, 244);
   margin: 0;
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 .item__link {
-  color: white;
+  color: rgb(244, 244, 244);
+  text-decoration: none;
+}
+.item__link:visited {
+  color: rgb(244, 244, 244);
+  text-decoration: none;
 }
 
 .project {
@@ -74,9 +81,9 @@
   font-size: 1.5em;
 }
 .project__heading {
+  font-size: 2em;
   padding: 20px;
   align-self: center;
-  border: 1px solid black;
 }
 
 .card {
@@ -107,6 +114,10 @@
   margin: 2em;
   justify-content: space-around;
   list-style: none;
+}
+
+.about {
+  font-size: 1.5em;
 }
 
 body {
