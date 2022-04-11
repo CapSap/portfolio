@@ -5,10 +5,17 @@
   display: flex;
   justify-content: space-around;
   background-color: palette.$navbar-bg;
-  color: white;
+  color: palette.$navbar-text;
   margin: 0;
+  padding: 20px;
+  font-size: 1.5em;
 }
 
 .item__link {
-  color: white;
+  color: palette.$navbar-text;
+  text-decoration: none;
+  &:visited {
+    color: palette.$navbar-text;
+    text-decoration: none;
+  }
 }
