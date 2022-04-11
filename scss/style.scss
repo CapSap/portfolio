@@ -2,9 +2,10 @@
 @use "navbar";
 @use "projects";
 @use "skills";
+@use "typography";
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: typography.$text-font;
   margin: 0;
   padding: 0;
 }
