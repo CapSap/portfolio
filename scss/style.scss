@@ -3,6 +3,7 @@
 @use "projects";
 @use "skills";
 @use "typography";
+@use "about";
 
 body {
   font-family: typography.$text-font;
