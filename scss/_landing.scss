@@ -23,9 +23,10 @@
   }
 
   &__circle {
+    background: linear-gradient(to bottom right, blue, pink);
     background-color: palette.$circle-fill;
-    height: 300px;
-    width: 300px;
+    height: 10em;
+    width: 10em;
     z-index: 2;
     border: 2px solid palette.$circle-border;
     grid-column: 3 / span 2;
@@ -34,6 +35,27 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &--smaller {
+      position: absolute;
+      height: 5em;
+      width: 5em;
+      margin: 50%;
+      z-index: 1;
+      @extend .landing__circle;
+      grid-column: 3;
+      grid-row: 2;
+      background: linear-gradient(
+        to bottom left,
+        rgb(255, 213, 0) 50%,
+        rgb(75, 239, 16) 50%
+      );
+    }
   }
 
   &__btn-container {
