@@ -18,10 +18,11 @@
   grid-column: 1/span 2;
   padding: 20px;
 }
-.landing__circle {
+.landing__circle, .landing__circle--smaller {
+  background: linear-gradient(to bottom right, blue, pink);
   background-color: blue;
-  height: 300px;
-  width: 300px;
+  height: 10em;
+  width: 10em;
   z-index: 2;
   border: 2px solid gold;
   grid-column: 3/span 2;
@@ -30,6 +31,20 @@
   display: flex;
   align-self: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.landing__circle:hover, .landing__circle--smaller:hover {
+  transform: scale(1.2);
+}
+.landing__circle--smaller {
+  position: absolute;
+  height: 5em;
+  width: 5em;
+  margin: 50%;
+  z-index: 1;
+  grid-column: 3;
+  grid-row: 2;
+  background: linear-gradient(to bottom left, rgb(255, 213, 0) 50%, rgb(75, 239, 16) 50%);
 }
 .landing__btn-container {
   grid-column: 1;
@@ -75,6 +90,11 @@
 
 .paddy-cnc {
   grid-column: 6/span 2;
+}
+
+.skills {
+  border: 1px solid black;
+  margin: 20px;
 }
 
 body {
