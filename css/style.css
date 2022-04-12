@@ -77,8 +77,17 @@
   background-color: rgb(185, 181, 181);
   gap: 20px;
   grid-template-columns: repeat(8, 1fr);
-  padding: 40px;
+  padding: 20px;
   font-size: 1.5em;
+}
+@media only screen and (max-width: 1400px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project__heading {
+    display: block;
+  }
 }
 .project__heading {
   font-size: 2em;
@@ -108,16 +117,23 @@
   text-align: center;
 }
 
-.skill__list {
+.skills-list {
   display: flex;
   padding: 2em;
   margin: 2em;
   justify-content: space-around;
   list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skills-list__item {
+  min-width: 160px;
+  text-align: center;
 }
 
 .about {
   font-size: 1.5em;
+  padding: 20px;
 }
 
 body {
