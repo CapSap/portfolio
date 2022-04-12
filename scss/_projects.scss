@@ -1,12 +1,22 @@
 @use "palette";
+@use "screen-sizes";
 
 .project {
   display: grid;
   background-color: palette.$project-bg;
   gap: 20px;
   grid-template-columns: repeat(8, 1fr);
-  padding: 40px;
+  padding: 20px;
   font-size: 1.5em;
+
+  @media only screen and (max-width: screen-sizes.$md) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__heading {
+      display: block;
+    }
+  }
 
   &__heading {
     font-size: 2em;
