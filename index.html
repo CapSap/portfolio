@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Charlie's Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="list">
+        <li class="list__item">
+          <a class="item__link" href="#landing">Home</a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="#projects">Projects</a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="#skills">Tech/Skills</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="landing" id="landing">
+      <h1 class="landing__name">Front End Developer</h1>
+      <p class="landing__text">
+        I am a self taught developer that focuses on front end development using
+        react
+      </p>
+      <div class="landing__circle"></div>
+      <div class="landing__circle--smaller"></div>
+      <div class="landing__btn-container"></div>
+    </div>
+    <div class="about">
+      <h2 class="about__heading">About</h2>
+
+      <p class="about__text">
+        Hi I'm Charlie. I've been learning web development. To help in my
+        journey I've enrolled in a 12 week course with _Nology.
+      </p>
+    </div>
+    <section class="project" id="projects">
+      <h2 class="project__heading">Featured Projects</h2>
+      <div class="card norm">
+        <h3 class="card__title">Norm app</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This app fetches data from the twitter API to display the recent
+          tweets made about Norm Macdonald, as a tribute to the late comedian.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p class="card__text">
+          During the process, I encountered a CORS issue for the first time. To
+          solve the issue, I served the React app from an express server;
+          allowing the server to make the API request. Through the building of
+          this app, I discovered Express, Node, CORS, working with an external
+          API, and page-designing.
+        </p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">Express, Node, React, TwitterAPI, Heroku</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/norm-tribute"
+            >Link to GitHub Repo</a
+          >
+          <a href="https://immense-depths-37700.herokuapp.com/"
+            >Link to Live Site</a
+          >
+        </div>
+
+        <img class="project__image" />
+      </div>
+
+      <div class="card paddy-cnc">
+        <h3 class="card__title">Paddy CNC app (work in progress)</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This application is intended to replace several google sheets that are
+          used to coordinate tasks and feed information to and from multiple
+          users to the online order fulfilment team.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p>Database design</p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">MERN stack (MongoDB, Express, React, Node)</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/paddy-mern-3/"
+            >Link to GitHub Repo</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="skills" id="skills">
+      <h2 class="skills__header">Tech Skills</h2>
+      <ul class="skill__list">
+        <li class="list__item">Javascript</li>
+        <li class="list__item">SASS</li>
+        <li class="list__item">MongoDB</li>
+        <li class="list__item">Express</li>
+        <li class="list__item">React</li>
+        <li class="list__item">Node</li>
+        <li class="list__item">Git</li>
+      </ul>
+    </div>
+  </body>
+</html>

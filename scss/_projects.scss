@@ -1,0 +1,29 @@
+@use "palette";
+
+.project {
+  display: grid;
+  background-color: palette.$project-bg;
+  gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 40px;
+  font-size: 1.5em;
+
+  &__heading {
+    font-size: 2em;
+    padding: 20px;
+    align-self: center;
+  }
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.norm {
+  grid-column: 4 / span 2;
+}
+
+.paddy-cnc {
+  grid-column: 6 / span 2;
+}

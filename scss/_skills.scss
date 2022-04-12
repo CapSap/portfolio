@@ -1,0 +1,19 @@
+@use "palette";
+
+.skills {
+  border: 1px solid black;
+  margin: 20px;
+  font-size: 2em;
+
+  &__header {
+    text-align: center;
+  }
+}
+
+.skill__list {
+  display: flex;
+  padding: 2em;
+  margin: 2em;
+  justify-content: space-around;
+  list-style: none;
+}
