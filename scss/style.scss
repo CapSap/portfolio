@@ -4,9 +4,14 @@
 @use "skills";
 @use "typography";
 @use "about";
+@use "contact";
 
 body {
   font-family: typography.$text-font;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-padding-top: 500px; /* height of sticky header */
 }

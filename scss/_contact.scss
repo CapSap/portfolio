@@ -1,0 +1,40 @@
+@use "palette";
+
+.contact {
+  background-color: palette.$navbar-bg;
+  color: palette.$navbar-text;
+
+  &__header {
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: palette.$navbar-bg;
+    color: palette.$navbar-text;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  &__item {
+    padding: 20px;
+  }
+
+  &__icon {
+    filter: invert(1);
+  }
+
+  &__link {
+    color: palette.$navbar-text;
+    text-decoration: underline;
+    &:visited {
+      color: palette.$navbar-text;
+      text-decoration: none;
+    }
+  }
+}

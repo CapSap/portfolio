@@ -1,21 +1,63 @@
 @use "palette";
 
-.list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  background-color: palette.$navbar-bg;
-  color: palette.$navbar-text;
-  margin: 0;
-  padding: 20px;
-  font-size: 1.5em;
-}
+.navbar {
+  label,
+  #hamburger {
+    display: none;
+  }
 
-.item__link {
-  color: palette.$navbar-text;
-  text-decoration: none;
-  &:visited {
+  label {
+    @media only screen and (max-width: 800px) {
+      display: inline-block;
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 2em;
+      padding: 10px;
+      position: fixed;
+    }
+  }
+
+  input:checked ~ .navbar__list {
+    display: block;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: palette.$navbar-bg;
     color: palette.$navbar-text;
-    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    @media only screen and (max-width: 800px) {
+      display: none;
+      margin-top: 50px;
+    }
+  }
+  &__item {
+    padding: 10px 30px;
+    font-size: 1.5em;
+
+    &:hover {
+      background-color: palette.$navbar-hover-bg;
+    }
+    @media only screen and (max-width: 800px) {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  }
+
+  &__link {
+    color: palette.$navbar-text;
+    text-decoration: underline;
+    &:visited {
+      color: palette.$navbar-text;
+      text-decoration: none;
+    }
   }
 }

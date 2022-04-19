@@ -1,25 +1,45 @@
 @use "palette";
+@use "screen-sizes";
 
 .landing {
   background-color: palette.$landing-bg;
   color: palette.$heading;
-  font-size: 2em;
+  font-size: 3em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 0.5fr);
   gap: 10px;
   margin-bottom: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
+  height: 100vh;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2em;
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+  @media only screen and (max-width: screen-sizes.$sm) {
+    font-size: 1.2em;
+  }
 
   &__name {
     grid-column: 1 / span 2;
     padding: 20px;
+    @media only screen and (max-width: 800px) {
+      align-self: end;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   &__text {
     grid-row: 2;
     grid-column: 1 / span 2;
     padding: 20px;
+
+    @media only screen and (max-width: 900px) {
+      grid-column-end: span 4;
+    }
   }
 
   &__circle {
@@ -37,11 +57,21 @@
     justify-content: center;
     transition: all 0.3s ease-in-out;
 
+    @media only screen and (max-width: screen-sizes.$md) {
+      height: 5em;
+      width: 5em;
+    }
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
+
     &:hover {
       transform: scale(1.2);
     }
 
     &--smaller {
+      filter: invert(1);
+
       position: absolute;
       height: 5em;
       width: 5em;
@@ -50,11 +80,10 @@
       @extend .landing__circle;
       grid-column: 3;
       grid-row: 2;
-      background: linear-gradient(
-        to bottom left,
-        rgb(255, 213, 0) 50%,
-        rgb(75, 239, 16) 50%
-      );
+
+      @media only screen and (max-width: screen-sizes.$md) {
+        display: none;
+      }
     }
   }
 
