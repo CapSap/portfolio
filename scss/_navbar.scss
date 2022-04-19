@@ -13,7 +13,7 @@
 
 .item__link {
   color: palette.$navbar-text;
-  text-decoration: none;
+  text-decoration: underline;
   &:visited {
     color: palette.$navbar-text;
     text-decoration: none;
