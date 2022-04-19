@@ -7,6 +7,7 @@
   grid-template-rows: repeat(3, 0.5fr);
   gap: 10px;
   margin-bottom: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
   height: 100vh;
 }
@@ -92,6 +93,24 @@
   display: flex;
 }
 
+.navbar label,
+.navbar #hamburger {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .navbar label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+    position: fixed;
+  }
+}
+.navbar input:checked ~ .navbar__list {
+  display: block;
+}
 .navbar__list {
   list-style: none;
   display: flex;
@@ -100,10 +119,30 @@
   color: rgb(244, 244, 244);
   margin: 0;
   padding: 20px;
-  font-size: 1.5em;
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+@media only screen and (max-width: 800px) {
+  .navbar__list {
+    display: none;
+    margin-top: 50px;
+  }
+}
+.navbar__item {
+  padding: 10px 30px;
+  font-size: 1.5em;
+}
+.navbar__item:hover {
+  background-color: rgb(108, 108, 108);
+}
+@media only screen and (max-width: 800px) {
+  .navbar__item {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
 }
 .navbar__link {
   color: rgb(244, 244, 244);
@@ -221,6 +260,11 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-padding-top: 500px;
+  /* height of sticky header */
 }
 
 /*# sourceMappingURL=style.css.map */
