@@ -3,13 +3,14 @@
 .landing {
   background-color: palette.$landing-bg;
   color: palette.$heading;
-  font-size: 2em;
+  font-size: 3em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 0.5fr);
   gap: 10px;
   margin-bottom: 100px;
   padding-bottom: 100px;
+  height: 100vh;
 
   &__name {
     grid-column: 1 / span 2;
