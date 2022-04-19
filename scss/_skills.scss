@@ -8,19 +8,23 @@
   &__header {
     text-align: center;
   }
-}
-
-.skills-list {
-  display: flex;
-  padding: 2em;
-  margin: 2em;
-  justify-content: space-around;
-  list-style: none;
-  flex-wrap: wrap;
-  align-items: center;
+  &__list {
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
   &__item {
     min-width: 160px;
     text-align: center;
+    vertical-align: middle;
+    padding: 1em;
+  }
+  img {
+    height: 2em;
   }
 }
