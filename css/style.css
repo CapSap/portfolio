@@ -220,6 +220,16 @@
   font-size: 1.5em;
   padding: 20px;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 1400px) {
+  .about {
+    display: flex;
+  }
+}
+.about__container {
+  grid-column: 1;
 }
 
 .contact {
