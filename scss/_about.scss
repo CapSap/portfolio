@@ -1,4 +1,17 @@
+@use "screen-sizes";
+
 .about {
   font-size: 1.5em;
   padding: 20px;
+  height: 100vh;
+  display: grid;
+
+  @media only screen and (max-width: screen-sizes.$md) {
+    display: flex;
+  }
+
+  grid-template-columns: repeat(2, 1fr);
+  &__container {
+    grid-column: 1;
+  }
 }

@@ -1,156 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Charlie's Portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <label for="hamburger">&#9776;</label>
-      <input type="checkbox" id="hamburger" />
-      <ul class="navbar__list">
-        <li class="navbar__item">
-          <a class="navbar__link" href="#landing">Home</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#projects">Projects</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#skills">Tech/Skills</a>
-        </li>
-        <li class="navbar__item">
-          <a class="navbar__link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <div class="landing" id="landing">
-        <h1 class="landing__name">Front End Developer</h1>
-        <p class="landing__text">
-          I am a self taught developer that focuses on front end development
-          using react
-        </p>
-        <div class="landing__circle"></div>
-        <div class="landing__circle--smaller"></div>
-        <div class="landing__btn-container"></div>
-      </div>
-      <div class="about">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Charlie's Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+    <ul class="navbar__list">
+      <li class="navbar__item">
+        <a class="navbar__link" href="#landing">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#projects">Projects</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#skills">Tech/Skills</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="landing" id="landing">
+      <h1 class="landing__name">Front End Developer</h1>
+      <p class="landing__text">
+        I am a self taught developer that focuses on front end development
+        using react
+      </p>
+      <div class="landing__circle"></div>
+      <div class="landing__circle--smaller"></div>
+      <div class="landing__btn-container"></div>
+    </div>
+    <div class="about">
+      <div class="about__container">
         <h2 class="about__heading">About</h2>
 
         <p class="about__text">
           Hi I'm Charlie. I've been learning web development. To help in my
           developer journey I've enrolled in a 12 week course with _Nology. My
-          long term goal is full stack development. I'm a rock climber and spent
-          a few years in Canada.
+          long term goal is full stack development. I enjoy rock climbing,
+          spending time in the outdoors and nerding about gear. I spent few
+          years in Toronto, Canada pursuing a failed relationship. I’m playing
+          around with the tools and knowledge I currently have and trying to
+          find problems that I can solve. I am completing courses with
+          FrontEnd Masters.
         </p>
       </div>
-      <section class="project" id="projects">
-        <h2 class="project__heading">Featured Projects</h2>
-        <div class="card norm">
-          <h3 class="card__title">Norm app</h3>
-          <h4 class="card__heading">Description</h4>
-          <p class="card__text">
-            This app fetches data from the twitter API to display the recent
-            tweets made about Norm Macdonald, as a tribute to the late comedian.
-          </p>
-          <h4 class="card__heading">Challenges and Solution</h4>
-          <p class="card__text">
-            During the process, I encountered a CORS issue for the first time.
-            To solve the issue, I served the React app from an express server;
-            allowing the server to make the API request. Through the building of
-            this app, I discovered Express, Node, CORS, working with an external
-            API, and page-designing.
-          </p>
-          <h4 class="card__heading">Technology used</h4>
-          <p class="card__text">Express, Node, React, TwitterAPI, Heroku</p>
-          <div class="card__link-container">
-            <a href="https://github.com/CapSap/norm-tribute"
-              >Link to GitHub Repo</a
-            >
-            <a href="https://immense-depths-37700.herokuapp.com/"
-              >Link to Live Site</a
-            >
-          </div>
-
-          <img class="project__image" />
+    </div>
+    <section class="project" id="projects">
+      <h2 class="project__heading">Featured Projects</h2>
+      <div class="card norm">
+        <h3 class="card__title">Norm app</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This app fetches data from the twitter API to display the recent
+          tweets made about Norm Macdonald, as a tribute to the late comedian.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p class="card__text">
+          During the process, I encountered a CORS issue for the first time.
+          To solve the issue, I served the React app from an express server;
+          allowing the server to make the API request. Through the building of
+          this app, I discovered Express, Node, CORS, working with an external
+          API, and page-designing.
+        </p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">Express, Node, React, TwitterAPI, Heroku</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/norm-tribute">Link to GitHub Repo</a>
+          <a href="https://immense-depths-37700.herokuapp.com/">Link to Live Site</a>
         </div>
+      </div>
 
-        <div class="card paddy-cnc">
-          <h3 class="card__title">Paddy CNC app (work in progress)</h3>
-          <h4 class="card__heading">Description</h4>
-          <p class="card__text">
-            This application is intended to replace several google sheets that
-            are used to coordinate tasks and feed information to and from
-            multiple users to the online order fulfilment team.
-          </p>
-          <h4 class="card__heading">Challenges and Solution</h4>
-          <p>
-            Database design, data flow, UX design, project and burnout
-            management
-          </p>
-          <h4 class="card__heading">Technology used</h4>
-          <p class="card__text">MERN stack (MongoDB, Express, React, Node)</p>
-          <div class="card__link-container">
-            <a href="https://github.com/CapSap/paddy-mern-3/"
-              >Link to GitHub Repo</a
-            >
-          </div>
+      <div class="card paddy-cnc">
+        <h3 class="card__title">Paddy CNC app (work in progress)</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This application is intended to replace several google sheets that
+          are used to coordinate tasks and feed information to and from
+          multiple users to the online order fulfilment team.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p>
+          Database design, data flow, UX design, project and burnout
+          management
+        </p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">MERN stack (MongoDB, Express, React, Node)</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/paddy-mern-3/">Link to GitHub Repo</a>
         </div>
-      </section>
-      <div class="skills" id="skills">
-        <h2 class="skills__header">Tech Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__item">
+      </div>
+      <div class="card norm">
+        <h3 class="card__title">JS Calculator</h3>
+        <h4 class="card__heading">Description</h4>
+        <p class="card__text">
+          This is a simple calcuator built with Javascript, HTML and CSS.
+        </p>
+        <h4 class="card__heading">Challenges and Solution</h4>
+        <p class="card__text">
+          First project with Nology that summarised our learning so far in DOM
+          manipluation and Javascript
+        </p>
+        <h4 class="card__heading">Technology used</h4>
+        <p class="card__text">HTML, JS, SCSS</p>
+        <div class="card__link-container">
+          <a href="https://github.com/CapSap/calculator-project">Link to GitHub Repo</a>
+          <a href="https://capsap.github.io/calculator-project/">Link to Live Site</a>
+        </div>
+      </div>
+    </section>
+    <div class="skills" id="skills">
+      <h2 class="skills__header">Tech Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <a href="www.ecma-international.org/publications-and-standards/standards/ecma-262/">
+
             <img src="./icons/javascript.svg" /> Javascript
-          </li>
-          <li class="skills__item">
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://sass-lang.com/">
+
             <img src="./icons/sass.svg" />
             SASS
-          </li>
-          <li class="skills__item">
+          </a>
+
+        </li>
+        <li class="skills__item">
+          <a href="https://www.mongodb.com/">
+
             <img src="./icons/mongodb.svg" />
 
             MongoDB
-          </li>
-          <li class="skills__item">
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://expressjs.com/">
+
             <img src="./icons/express.svg" /> Express
-          </li>
-          <li class="skills__item"><img src="./icons/react.svg" /> React</li>
-          <li class="skills__item"><img src="./icons/nodedotjs.svg" /> Node</li>
-          <li class="skills__item"><img src="./icons/git.svg" /> Git</li>
-          <li class="skills__item"><img src="./icons/html5.svg" /> HTML</li>
-          <li class="skills__item"><img src="./icons/css3.svg" /> CSS</li>
-        </ul>
-      </div>
-      <section id="contact" class="contact">
-        <h2 class="contact__header">Reach out here</h2>
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a
-              class="contact__link"
-              href="https://www.linkedin.com/in/charlie-morris-59a7aba2/"
-            >
-              <img
-                class="contact__icon"
-                src="./icons/LinkedIn.svg"
-                alt="linkedin icon link to my linkedin profile page"
-              />LinkedIn
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="https://github.com/CapSap">
-              <img
-                class="contact__icon"
-                src="./icons/github.svg"
-                alt="github icon link to my github page"
-              />GitHub
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://reactjs.org/">
+
+            <img src="./icons/react.svg" /> React
+        </li>
+        </a>
+        <li class="skills__item">
+          <a href="https://nodejs.org/en/">
+
+            <img src="./icons/nodedotjs.svg" /> Node
+        </li>
+        </a>
+        <li class="skills__item">
+          <a href="https://git-scm.com/">
+
+            <img src="./icons/git.svg" /> Git
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://html.spec.whatwg.org/">
+
+            <img src="./icons/html5.svg" /> HTML
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://www.w3.org/TR/CSS/#css">
+
+            <img src="./icons/css3.svg" /> CSS
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section id="contact" class="contact">
+      <h2 class="contact__header">Reach out here</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a class="contact__link" href="https://www.linkedin.com/in/charlie-morris-59a7aba2/">
+            <img class="contact__icon" src="./icons/LinkedIn.svg"
+              alt="linkedin icon link to my linkedin profile page" />LinkedIn
+          </a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link" href="https://github.com/CapSap">
+            <img class="contact__icon" src="./icons/github.svg" alt="github icon link to my github page" />GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
 </html>
