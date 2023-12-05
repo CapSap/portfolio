@@ -185,11 +185,11 @@
   border: 1px solid black;
 }
 
-.norm {
+.card__left {
   grid-column: 4 / span 2;
 }
 
-.paddy-cnc {
+.card__right {
   grid-column: 6 / span 2;
 }
 
